@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form manipulation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <form action="">
+      <div class="form-group">
+      <label>firstname</label>
+      <input type="text" class="form-control" name="firstname" id="First">
+      </div>
+      <div class="form-group">
+        <label>lastname</label>
+        <input type="text" class="form-control" name="Lastname" id="Last">
+        </div>
+        <div class="form-group">
+          <label>Pincode</label>
+          <input type="text" class="form-control" name="pincode" id="pincode">
+          </div>
+          <div class="input-group form-group" id="gender"><br>
+            <label>gender</label><br>
+            <label for="male">
+            <input type="radio" class="form-check-input" name="gender" id="gender" value="male">
+            male</label>
+            <label for="female">
+              <input type="radio" class="form-check-input" name="gender" id="gender" value="female">
+              female</label>
+            </div>
+            <div id="food1" class="form-group">
+              <label>food choice</label>
+              <input type="checkbox" class="form-check" id="piza" name="food">     
+              <label>pizaa</label>
+              <input type="checkbox" class="form-check" id="burger" name="food">     
+              <label>burger</label>
+              <input type="checkbox" class="form-check" id="fires" name="food">     
+              <label>fries</label>
+              <input type="checkbox" class="form-check" id="muttonbiriyani" name="food">     
+              <label>muttonbiriyani</label>
+              <input type="checkbox" class="form-check" id="chickenbiriyani" name="food">     
+              <label>chickenbiriyani</label>
+             </div>
+             <div class="form-group">
+              <label>state</label>
+              <input type="text" class="form-control" name="pincode" id="sta" required>
+              </div>
+              <div class="form-group">
+                <label>country</label>
+                <input type="text" class="form-control" name="contry" id="con">
+                </div>
+                <div class="form-group">
+                  
+                <button type="button" onclick="foo( )">submit</button>
+                  </div>
+                </div>
+                </form>
+                
+              
+    <table class="table" id="datatable">
+      <thead>
+        <tr id="thehead">
+          <!-- <th>sno</th> -->
+          <th>firstname</th>
+          <th>Lastname</th>
+          <th>pincode</th>
+          <th>state</th>
+          <th>country</th> 
+           <th>choice of food</th> 
+          <th>gender</th>
+        </tr>
+      </thead>
+      <tbody>
+      
+      </tbody>
+    </table>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
